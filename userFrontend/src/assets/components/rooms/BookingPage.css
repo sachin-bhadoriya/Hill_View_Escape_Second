@@ -1,0 +1,272 @@
+.main-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.top-welcome-image{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.top-welcome-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 400px; */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(to bottom, rgba(255, 132, 0, 0.3), rgba(17, 17, 254, 0.3));  */
+    z-index: 1;
+}
+
+.top-welcome-image p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    /* line-height: 15px; */
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(to top, #E4004B, rgb(209, 209, 222));
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 2;
+}
+
+.main-container .container {
+    padding-top: 5vh;
+}
+
+.image-container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+}
+
+.main-image {
+    width: 50%;
+    height: 100%;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.child-image {
+    height: 406px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child-image img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 3px 3px;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 25px 0;
+}
+
+.info-container p {
+    margin: 0;
+}
+
+.data-container {
+    margin: 10px 0 25px 0;
+}
+
+.data-container .title {
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.data-container .type {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.data-container .discount {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 8px 13px;
+    border-radius: 55px;
+}
+
+.data-container .main-content {
+    margin-bottom: -3px;
+}
+
+.data-container .main-content span {
+    margin-right: 7px;
+}
+
+.service-details .description {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.info-container .amount-rate {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.rooms-detail-informations {
+    display: flex;
+    gap: 5px;
+}
+
+.rooms-detail-informations p {
+    margin: 0;
+}
+
+.rooms-detail-informations {
+    margin-top: 4px;
+}
+
+.rooms-detail-informations .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.rooms-detail-informations .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #353536;
+    margin-top: -3px;
+}
+
+.bp-icons-service {
+    display: flex;
+    gap: 9px;
+    margin-top: 13px;
+}
+
+.bp-icons-service div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #dadada;
+    padding: 3px 13px;
+    border-radius: 50px;
+    line-height: 14px;
+}
+
+.icon-container,
+.content-container {
+    padding: 0 5px;
+}
+
+.room-content-para p {
+    font-size: 15px;
+    margin: 50px 0;
+}
+
+.review-btn button {
+    padding: 8px 40px;
+    margin: 20px 0 50px 0;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: #353536;
+    font-size: 14px;
+    color: white;
+}
+
+.booking-container-bar{
+    /* background-color: #353536; */
+    width: 90%;
+    margin: 30px auto 80px auto;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #a6a6a6;
+}
+
+
+@media screen and (max-width: 500px) {
+    .image-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .child-image {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .data-container .title {
+        font-size: 25px;
+    }
+
+    .data-container .type {
+        font-size: 12px;
+    }
+
+    .data-container .discount {
+        font-size: 9px;
+    }
+
+
+    .service-details .description {
+        font-size: 25px;
+        margin-bottom: 13px;
+    }
+
+    .info-container .amount-rate {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+
+    .rooms-detail-informations .title {
+        font-size: 16px;
+    }
+
+    .rooms-detail-informations .description {
+        font-size: 16px;
+    }
+
+
+    .bp-icons-service div {
+        font-size: 12px;
+        padding: 3px 15px;
+    }
+
+    .data-container .main-content{
+        margin-bottom: 10px;
+    }
+}

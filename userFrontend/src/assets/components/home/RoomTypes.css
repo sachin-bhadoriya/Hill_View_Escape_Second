@@ -1,0 +1,77 @@
+.contentAbout{
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 90px 15vw 0 15vw !important;
+}
+
+@media screen and (max-width: 425px) {
+    .contentAbout{
+    margin: 0 auto 40px auto;
+    padding: 90px 6vw 0 6vw !important;
+}
+}
+
+
+
+.roomNameCont{
+    display: flex;
+    justify-content: space-between;
+}
+.roomImage{
+    width: 100%;
+    height: 187px;
+    object-fit: cover;
+}
+.cardRoom{
+    /* border: 1px solid black; */
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff !important;
+}
+/* .roomContent{
+    font-size: 16px;
+} */
+.roomNameTitleCont{
+    font-size: 20px;
+}
+.roomNameAddressCont{
+    font-size: 14px;
+}
+.roomTime{
+    font-size: 14px;;
+}
+.roomAmount{
+    font-size: 20px;;
+}
+.starRoom{
+    font-size: 14px;
+}
+
+.bookNowBtn{
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #7e8486;
+    background-color: #f5f5f59d;
+    outline: none;
+    transition: all 0.5s;
+}
+.bookNowBtn:hover{
+    background-color: #F5F5F5;
+}
+.aboutTitleHero{
+    font-size: 2.3rem;
+}
+
+.allRoomCont button{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 1px solid #7e8486;
+    background-color: #ffffff;
+    outline: none;
+    text-align: center;
+    margin: 75px auto 50px auto;
+}

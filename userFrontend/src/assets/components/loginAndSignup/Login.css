@@ -1,0 +1,135 @@
+  .app-container {
+    /* background: linear-gradient(to bottom, #55c0e3, #ffffff); */
+    background-image: url('/src/assets/cloud.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background: linear-gradient(to bottom, lightblue, #dadada, white);
+    /* background-color: red; */
+    display: grid;
+    place-content: center;
+    padding: 50px;
+    width: 100%;
+    padding-top: 200px !important;
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px 25px;
+    min-width: 400px;
+    /* width: 50%; */
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .login-card h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  .login-card p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  
+  .forgot {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .forgot a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .get-started {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .or-divider {
+    font-size: 13px;
+    color: #777;
+    margin: 15px 0;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .social-buttons button {
+    flex: 1;
+    background: #f1f1f1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 420px) {
+    .login-card {
+      padding: 20px 15px;
+    }
+  }
+  
+
+
+@media screen and (max-width: 500px) {
+    .login-card {
+        min-width: 400px;
+      }
+}
+@media screen and (max-width: 380px) {
+    .login-card {
+        min-width: 330px;
+      }
+}
+@media screen and (max-width: 320px) {
+    .login-card {
+        min-width: 300px;
+      }
+}
+@media screen and (max-width: 280px) {
+    .login-card {
+        min-width: 250px;
+      }
+}

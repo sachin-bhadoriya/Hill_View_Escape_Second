@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.playFair{
+  font-family: "Playfair", serif;
+}
+.outFit{
+  font-family: "Outfit", sans-serif;
+}
+.savate{
+  font-family: "Savate", sans-serif;
+}
+.raleWay{
+  font-family: "Raleway", sans-serif;
+}
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+}
+.dmSerifDisplay{
+  font-family: "DM Serif Display", serif;
+}
+.exo{
+  font-family: "Exo 2", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fontColorZinc{
+  color: #7e8486;
+}
+
+.bgColorZinc{
+  background-color: #F5F5F5;
+}
+.darkFontWeight{
+  font-weight: 600;
+}

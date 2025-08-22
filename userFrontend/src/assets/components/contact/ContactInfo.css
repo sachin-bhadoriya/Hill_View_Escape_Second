@@ -1,0 +1,93 @@
+.contactCont {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.contactCont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 400px; */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(to bottom, rgba(255, 132, 0, 0.3), rgba(17, 17, 254, 0.3));  */
+    z-index: 1;
+}
+
+.contactHead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9vw;
+    font-weight: 600;
+    background: linear-gradient(to top, #E4004B, rgb(209, 209, 222));
+    /* background: linear-gradient(to top, rgb(255, 132, 0), rgb(17, 17, 254)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+}
+
+.mainContactCont .col-md-6{
+    padding: 30px;
+}
+
+.infoParts{
+    width: 90%;
+    margin:  auto;
+}
+
+.mainContactCont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subContIcons{
+    /* width: 100%; */
+    background-color: #dadada2f;
+    display: flex;
+    /* height: 60px; */
+    border-radius: 10px;
+    padding: 15px;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px 0;
+    /* color: white; */
+}
+
+.infoParts .playFair{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.infoParts .outFit{
+    color: #515151;
+}
+
+.contIconsmini{
+    font-size: 25px;
+    margin-right: 15px;
+    display: flex;
+    margin-left: 10px;
+    color: rgba(19, 9, 155, 0.59);
+}
+.contTextmini{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 425px) {
+    .contactHead{
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+}

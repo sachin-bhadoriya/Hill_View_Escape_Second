@@ -1,0 +1,101 @@
+.aboutCont {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.aboutCont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(to bottom, rgba(255, 132, 0, 0.3), rgba(17, 17, 254, 0.3));  */
+    z-index: 1;
+}
+
+
+.mainCont .outFit{
+    color: #515151;
+}
+
+.aboutHead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 600;
+    background: linear-gradient(to top, #E4004B, rgb(209, 209, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+}
+
+
+.aboutImage .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageOne,
+.ImageTwo {
+    height: 320px;
+    overflow: hidden;
+    /* border-radius: 15px; */
+    flex-shrink: 0;
+    position: relative; /* for layer positioning */
+}
+
+.ImageOne img,
+.ImageTwo img {
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* border-radius: 10px; */
+    transition: transform 0.5s ease;
+}
+
+/* Layer that adds bottom shadow */
+.imageLayer {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    pointer-events: none; /* allows clicks to pass through */
+    box-shadow: inset 0 -60px 40px -20px rgba(255, 255, 255, 1); 
+}
+
+.mainCont .col-md-6{
+    padding: 0 29px 17px 29px;
+    margin-bottom: 20px;
+}
+.mainCont h3{
+    font-size: 3rem;
+}
+
+
+.storyContainer h3{
+    line-height: 45px;
+}
+
+@media screen and (max-width: 425px) {
+    .aboutHead{
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+}

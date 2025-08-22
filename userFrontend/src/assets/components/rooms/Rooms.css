@@ -1,0 +1,146 @@
+.roomsCard img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.roomTitle {
+    font-size: 30px;
+    font-weight: 400;
+    color: #1e2939;
+}
+
+.roomReviewNo,
+.roomServiceIcons {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.amount {
+    font-size: 20px;
+    font-weight: 500;
+    color: #364153;
+}
+
+.roomsTitle {
+    font-size: 8vw;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    background: linear-gradient(to top, #E4004B, rgb(209, 209, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.roomsPara {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffffb7;
+    margin: 0;
+}
+
+.subContainer {
+    margin: 0px 0 50px 0;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.subContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(to bottom, rgba(255, 132, 0, 0.3), rgba(17, 17, 254, 0.3));  */
+    z-index: 1;
+}
+
+.roomsTitleandData {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.infoContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 30px;
+}
+
+.roomsCard p {
+    margin-bottom: 5px;
+}
+
+.roomsCard{
+    margin: 0 0 50px 0;
+}
+
+
+.roomPara {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6a7282e6;
+    margin-top: -12px;
+}
+
+.info-con-main {
+    margin-bottom: 20px;
+}
+
+.roomServiceIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoContainer i{
+    background: linear-gradient(to top, #E4004B, #364153);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+    .roomsCard{
+        flex-wrap: wrap;
+        padding: 10px;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .roomsCard img {
+        max-width: 100%;
+    }
+
+    .roomsTitle {
+        font-size: 40px;
+    }
+
+    .roomTitle {
+        font-size: 36px;
+    }
+
+    .infoContainer{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .roomsTitle{
+        width: 100%;
+        text-align: center;
+        /* font-size: 45px; */
+    }
+}

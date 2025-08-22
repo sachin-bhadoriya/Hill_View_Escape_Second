@@ -1,0 +1,154 @@
+/* Container */
+.thankyou-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6vw 0 5vw 0;
+  background: linear-gradient(to bottom right, #fbcfe8, #e9d5ff, #bfdbfe);
+  overflow: hidden;
+}
+
+/* Card */
+.thankyou-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  text-align: center;
+  max-width: 28rem;
+  /* desktop */
+  width: 100%;
+}
+
+/* Emoji */
+.thankyou-emoji {
+  font-size: 3.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Image */
+.thankyou-img {
+  width: 8rem;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  /* animation: vehicle 3s linear infinite; */
+}
+
+@keyframes vehicle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(270deg);
+  }
+
+  75% {
+    transform: rotate(110deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Heading */
+.thankyou-heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraph */
+.thankyou-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Button */
+.thankyou-button {
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.thankyou-button:hover {
+  transform: scale(1.1);
+}
+
+.thankyou-button:active {
+  transform: scale(0.95);
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 640px) {
+  .thankyou-container {
+    padding: 25vw 1rem 5vw 1rem;
+  }
+
+  .thankyou-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .thankyou-emoji {
+    font-size: 2.5rem;
+  }
+
+  .thankyou-img {
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  .thankyou-heading {
+    font-size: 1.5rem;
+  }
+
+  .thankyou-text {
+    font-size: 1rem;
+  }
+
+  .thankyou-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* 📲 Tablet Styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .thankyou-container {
+    padding: 10vw 0 5vw 0;
+  }
+
+  .thankyou-card {
+    padding: 2rem;
+    max-width: 24rem;
+  }
+
+  .thankyou-emoji {
+    font-size: 3rem;
+  }
+
+  .thankyou-img {
+    width: 7rem;
+  }
+
+  .thankyou-heading {
+    font-size: 1.7rem;
+  }
+
+  .thankyou-text {
+    font-size: 1.05rem;
+  }
+}
