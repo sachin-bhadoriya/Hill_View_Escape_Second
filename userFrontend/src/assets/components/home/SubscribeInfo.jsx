@@ -20,7 +20,7 @@ const SubscribeInfo = () => {
 
     try {
       setIsSubscribing(true);
-      await axios.post("http://localhost:5000/subscribe", { name, email });
+      await axios.post("https://hill-view-escape-second-backend.onrender.com/subscribe", { name, email });
       navigate("/thanku")
     } catch (error) {
       console.error("Error while subscribing:", error);

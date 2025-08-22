@@ -21,7 +21,7 @@ const ContactForm = () => {
       return;
     } else {
       setIsSubmitting(true);
-      await axios.post("http://localhost:5000/contact", { name, email, contact, subject, message });
+      await axios.post("https://hill-view-escape-second-backend.onrender.com/contact", { name, email, contact, subject, message });
       console.log(name, email, contact, subject, message);
 
       setName("");
